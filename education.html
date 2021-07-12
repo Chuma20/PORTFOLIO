@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        .sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 710px;
+  top: 0;
+  left: 0;
+  background-color: rgb(228, 228, 228);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-image: url('unnamed.png');
+  background-repeat: no-repeat;
+}
+
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(58, 51, 51);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+h2{
+  text-shadow: 3px 3px brown;
+  text-align: center;
+font-size: 40px;
+font-family: 'Courier New', Courier, monospace;
+}
+  
+h4{
+  
+  text-align: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+footer{
+  text-align: center;
+  padding-top: 30px;
+}
+body{
+  background-color: slategrey;
+}
+   </style>
+</head>
+<body>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="my work.html">My Work</a> 
+        <a href="contact.html">Contact</a>
+      
+
+      </div>
+      
+      <button class="openbtn" onclick="openNav()">☰</button>  
+    <h2>High School</h2>
+    <h4>Adelaide Gymnasium</h4>
+    <h4>Grade: 8 - 12</h4>
+    <h4>From: 2014 - 2019</h4>
+    <h2> College</h2>
+    <h4>Eastcape Midlands College</h4>
+    <h4>Year: 2020</h4>
+    <h2>Training</h2>
+    <h4>Codetelligent</h4>
+    <h4>Year: 2020</h4>
+    <h2>Certificates</h2>
+    <h4>Maths cetificate and a trophy</h4>
+    <h4>HTML and CSS certificate</h4>
+    <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+    <footer>Copyright @Chuma Tsheyini 2021</footer>
+</body>
+</html>

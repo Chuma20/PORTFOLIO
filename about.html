@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        .sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 710px;
+  top: 0;
+  left: 0;
+  background-color: rgb(228, 228, 228);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-image: url('unnamed.png');
+  background-repeat: no-repeat;
+}
+
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(58, 51, 51);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+p{
+  text-align: center;
+  padding-bottom: 395px;
+  font-size: larger;
+  font-family: 'Courier New', Courier, monospace;
+}
+footer{
+  text-align: center;
+  
+}
+h1{
+  text-align: center;
+  text-shadow:3px 3px rgb(197, 201, 201);
+  }
+  img { 
+    border-radius: 30px;
+  margin-left: 690px;
+}
+body {
+  background-color: slategrey;
+}
+    </style>
+</head>
+<body>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="my work.html">My Work</a> 
+        <a href="contact.html">Contact</a>
+      
+
+      </div>
+      
+      <button class="openbtn" onclick="openNav()">☰</button>  
+     
+    <h1>ABOUT ME</h1>
+    <img src="chumz.jpg" width="200px" >
+    <p>I grew up in a small town in the Eastern Cape called 
+        Fort Beaufort,<br> did my High school in a town called Adelaide in a school called<br>
+        Adelaide Gymnasium and I did a subject called Computer Applications <br>
+        Technology and since then I have been interested in building websites.
+        
+        <br>I am a young woman who dedicates herself on her work and does not give up<br>
+        on what I want to achieve. I like challenges and I am willing to learn new<br> 
+        things in life. I persevere and pray. I am willing to work under pressure.<br>
+        
+        I believe that if someone ants to do something, no one can change that <br>persons 
+        mind because when one puts her mind to something no one tells them <br>otherwise.
+        
+        At the moment I am a 12 months intern at Younglings Africa.
+        
+        
+        </p>
+        <script>
+            function openNav() {
+              document.getElementById("mySidepanel").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidepanel").style.width = "0";
+            }
+            </script>
+        <footer>Copyright @Chuma Tsheyini 2021</footer>
+</body>
+</html>
